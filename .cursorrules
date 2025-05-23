@@ -1,0 +1,70 @@
+# AISearch Project Coding Standards
+
+## TypeScript
+- Use TypeScript for all files
+- Define types for all components, functions, and variables
+- Avoid using 'any' type
+- Use interfaces for objects with multiple properties
+
+## Components
+- Use functional components with hooks
+- Keep components focused on a single responsibility
+- Extract reusable UI elements into separate components
+- Use proper prop types with TypeScript interfaces
+
+## Styling
+- Use StyleSheet.create for all styles
+- Follow the project theme definitions for colors, fonts, and spacing
+- Keep styles organized by component or screen
+- Use consistent naming conventions for style properties
+
+## File Structure
+- Group files by feature or domain
+- Keep related files close to each other
+- Use index files for cleaner imports
+- Follow project folder structure guidelines
+
+## Naming Conventions
+- Use PascalCase for component names and files
+- Use camelCase for variables, functions, and methods
+- Use ALL_CAPS for constants
+- Use descriptive names that indicate purpose
+
+## Imports
+- Group imports: React, libraries, components, utilities
+- Use absolute imports for project files when possible
+- Avoid duplicated imports
+
+## State Management
+- Use React hooks for local state
+- Keep state as close as possible to where it's used
+- Minimize prop drilling
+- Use context or state management libraries for global state
+
+## Error Handling
+- Implement proper error boundaries
+- Handle API errors gracefully
+- Provide meaningful error messages to users
+- Log errors for debugging purposes
+
+## Performance
+- Memoize expensive calculations
+- Use callback functions properly
+- Avoid unnecessary re-renders
+- Optimize images and assets
+
+## Documentation
+- Add comments for complex logic
+- Document component props and functions
+- Keep README updated with project information
+- Document any non-obvious implementations 
+
+## Command Line & Environment (Windows)
+- Use backslashes (\) for Windows file paths in commands
+- Use 'cd' to navigate directories before executing commands
+- Always verify current directory with 'dir' before installing packages
+- Install all npm packages inside the AISearch directory, not the root
+- Use npm commands without additional flags on Windows
+- For directory navigation with spaces, use quotes: cd "My Folder"
+- When in doubt about command syntax, use full paths
+- Remember that Windows environment is case-insensitive but React Native is case-sensitive 
