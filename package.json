@@ -1,0 +1,44 @@
+{
+  "name": "aisearch",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "backend:build": "tsc -p tsconfig.backend.json",
+    "backend:start": "node dist/backend/index.js",
+    "backend:dev": "ts-node-dev --respawn --transpile-only src/backend/index.ts",
+    "start:all": "node start.js",
+    "start:simple": "node start-simple.js",
+    "start:metro": "ts-node-dev --respawn --transpile-only src/backend/index.ts"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^14.1.0",
+    "@react-navigation/bottom-tabs": "^7.3.13",
+    "@react-navigation/native": "^7.1.9",
+    "@react-navigation/stack": "^7.3.2",
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "expo": "~53.0.9",
+    "expo-status-bar": "~2.2.3",
+    "express": "^4.19.1",
+    "react": "19.0.0",
+    "react-native": "0.79.2",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-screens": "^4.10.0",
+    "react-native-gesture-handler": "^2.25.0",
+    "react-native-reanimated": "^3.17.5" 
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/react": "~19.0.10",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "~5.8.3"
+  },
+  "private": true
+}
