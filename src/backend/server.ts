@@ -6,7 +6,7 @@ import { ScraperManager } from './scraperManager';
 const app = express();
 const PORT = parseInt(process.env.PORT || '3000', 10);
 
-// Configure CORS for mobile access
+// Configure C for mobile access
 app.use(cors({
   origin: '*', // In production, replace with your app's domain
   methods: ['GET'],
