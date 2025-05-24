@@ -5,59 +5,120 @@
 - Define types for all components, functions, and variables
 - Avoid using 'any' type
 - Use interfaces for objects with multiple properties
+- Use type guards for runtime type checking
+- Prefer readonly properties when values shouldn't change
+- Use union types for variables that can have multiple types
+- Document complex type definitions with JSDoc comments
 
 ## Components
 - Use functional components with hooks
 - Keep components focused on a single responsibility
 - Extract reusable UI elements into separate components
 - Use proper prop types with TypeScript interfaces
+- Implement proper component lifecycle management
+- Use React.memo() for performance optimization when needed
+- Keep component files under 300 lines (split if larger)
+- Use composition over inheritance
 
 ## Styling
 - Use StyleSheet.create for all styles
 - Follow the project theme definitions for colors, fonts, and spacing
 - Keep styles organized by component or screen
 - Use consistent naming conventions for style properties
+- Implement responsive design using flexbox
+- Use platform-specific styles when necessary
+- Follow accessibility guidelines for colors and contrast
+- Use relative units (%, flex) over fixed units when possible
 
 ## File Structure
 - Group files by feature or domain
 - Keep related files close to each other
 - Use index files for cleaner imports
 - Follow project folder structure guidelines
+- Maintain consistent file naming across the project
+- Keep backend and frontend code separate
+- Use barrel exports (index.ts) for cleaner imports
+- Follow the established directory structure for new features
 
 ## Naming Conventions
 - Use PascalCase for component names and files
 - Use camelCase for variables, functions, and methods
 - Use ALL_CAPS for constants
 - Use descriptive names that indicate purpose
+- Prefix private methods with underscore (_)
+- Use consistent naming for similar concepts
+- Use verb-noun format for function names
+- Use noun format for component names
 
 ## Imports
 - Group imports: React, libraries, components, utilities
 - Use absolute imports for project files when possible
 - Avoid duplicated imports
+- Sort imports alphabetically within groups
+- Use type imports for TypeScript types
+- Remove unused imports
+- Use named imports over default imports when possible
+- Group related imports together
 
 ## State Management
 - Use React hooks for local state
 - Keep state as close as possible to where it's used
 - Minimize prop drilling
 - Use context or state management libraries for global state
+- Implement proper state initialization
+- Use reducers for complex state logic
+- Memoize state values when appropriate
+- Document state dependencies and side effects
 
 ## Error Handling
 - Implement proper error boundaries
 - Handle API errors gracefully
 - Provide meaningful error messages to users
 - Log errors for debugging purposes
+- Use try-catch blocks for async operations
+- Implement retry logic for network requests
+- Validate user input before submission
+- Handle edge cases and null states
 
 ## Performance
 - Memoize expensive calculations
 - Use callback functions properly
 - Avoid unnecessary re-renders
 - Optimize images and assets
+- Implement proper list virtualization
+- Use lazy loading for components
+- Optimize bundle size
+- Profile and monitor performance metrics
+
+## Testing
+- Write unit tests for utilities and hooks
+- Implement component testing
+- Test error scenarios
+- Maintain good test coverage
+- Use meaningful test descriptions
+- Mock external dependencies
+- Test accessibility features
+- Implement E2E tests for critical flows
 
 ## Documentation
 - Add comments for complex logic
 - Document component props and functions
 - Keep README updated with project information
-- Document any non-obvious implementations 
+- Document any non-obvious implementations
+- Use JSDoc for function documentation
+- Document API endpoints and responses
+- Keep changelog updated
+- Document environment setup requirements
+
+## Security
+- Implement proper input sanitization
+- Use secure storage for sensitive data
+- Follow OWASP security guidelines
+- Implement proper authentication
+- Use HTTPS for all API calls
+- Validate all user inputs
+- Implement rate limiting
+- Follow security best practices for API keys
 
 ## Command Line & Environment (Windows)
 - Use backslashes (\) for Windows file paths in commands
@@ -67,4 +128,17 @@
 - Use npm commands without additional flags on Windows
 - For directory navigation with spaces, use quotes: cd "My Folder"
 - When in doubt about command syntax, use full paths
-- Remember that Windows environment is case-insensitive but React Native is case-sensitive 
+- Remember that Windows environment is case-insensitive but React Native is case-sensitive
+- Use environment variables for configuration
+- Follow proper .env file management
+- Document all required environment variables
+
+## Git Workflow
+- Follow conventional commits format
+- Create feature branches for new development
+- Keep commits atomic and focused
+- Write meaningful commit messages
+- Review code before merging
+- Keep branches up to date with main
+- Use pull requests for code review
+- Document breaking changes 
